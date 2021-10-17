@@ -40,6 +40,18 @@
     align-items: center;
 }
 
+.flex_1 {
+    flex: 1;
+}
+
+.flex_2 {
+    flex: 2;
+}
+
+.flex_3 {
+    flex: 3;
+}
+
 .wdt_100 {
     width: 100%;
 }
@@ -117,12 +129,10 @@ body {
 }
 
 .left_column {
-    flex: 3;
     margin-right: 10px;
 }
 
 .right_column {
-    flex: 1;
 }
 
 .card {
