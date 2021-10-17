@@ -16,4 +16,99 @@
     outline: 0;
     padding: 0;
     margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+/* UTILITIES */
+
+.flex_right {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_down {
+    display: flex;
+    flex-direction: column;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.wdt_100 {
+    width: 100%;
+}
+
+.wdt_90 {
+    width: 90%;
+}
+
+.bg_dodger {
+    background-color: dodgerblue;
+}
+
+.bg_grey {
+    background-color: rgb(42, 42, 42);
+}
+
+.ft_dodger {
+    color: dodgerblue;
+}
+
+.ft_white {
+    color: white;
+}
+
+.pad_10 {
+    padding: 10px;
+}
+
+.margin_10  {
+    margin: 10px 00px;
+}
+
+/* AREAS */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main_container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* //// NAV BAR /////////////// */
+
+.nav {
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.btn {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    padding: 0pc 15px;
+    color: yellow;
+    font-weight: bold;
+    border-color: yellow;
+    background: none;
+}
+
+.login {
+    
+}
+
+/* //// MAIN CONTENT ////////// */
+
+.main_content {
+}
+
