@@ -20,6 +20,19 @@
     /* overflow: hidden; */
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+.ita {
+    font-style: italic;
+}
+
 /* UTILITIES */
 
 .flex_right {
@@ -125,6 +138,10 @@ body {
 
 /* //// MAIN CONTENT ////////// */
 
+a {
+    color: dodgerblue;
+}
+
 .main_content {
 }
 
@@ -140,4 +157,15 @@ body {
     border-width: 1px;
     border-color: dodgerblue;
     background-color: rgb(42, 42, 42);
+    margin-bottom: 10px;
+}
+
+.add_define_column {
+    text-align: center;
+    padding: 10px;
+}
+
+.add {
+    border-color: rgb(55, 247, 19);
+    color: rgb(55, 247, 19);
 }
