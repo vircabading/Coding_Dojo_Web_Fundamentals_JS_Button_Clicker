@@ -17,7 +17,7 @@
     padding: 0;
     margin: 0;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* UTILITIES */
@@ -30,6 +30,10 @@
 .flex_down {
     display: flex;
     flex-direction: column;
+}
+
+.justify_center {
+    justify-content: center;
 }
 
 .align_center {
@@ -112,3 +116,18 @@ body {
 .main_content {
 }
 
+.left_column {
+    flex: 3;
+    margin-right: 10px;
+}
+
+.right_column {
+    flex: 1;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-color: dodgerblue;
+    background-color: rgb(42, 42, 42);
+}
