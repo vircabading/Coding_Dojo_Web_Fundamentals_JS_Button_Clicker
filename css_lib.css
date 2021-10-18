@@ -137,34 +137,6 @@ h3 {
     font-size: 1.3rem;
 }
 
-.bg_blue_steel {
-    background: rgb(2,2,5);
-    background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
-}
-
-.bg_dodger {
-    background-color: dodgerblue;
-}
-
-.ft_white {
-    color: white;
-}
-
-.ft_dodger {
-    color: dodgerblue;
-}
-
-.bd_dodger {
-    border-color: dodgerblue;
-}
-
-.bd_navy {
-    border-style: solid;
-    border-color: navy;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
 .pad_10 {
     padding: 10;
 }

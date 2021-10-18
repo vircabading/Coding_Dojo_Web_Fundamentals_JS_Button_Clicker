@@ -1,11 +1,12 @@
 /*  //////////////////////////////////////////////////
-    Subj:
-    Project:
-    By:
-    Created:
+    Subj:       Coding Dojo > Web Fundamentals > Javascript
+                Button Clicker
+    By:         Virgilio D. Cabading Jr.
+    Created:    October 16, 2021
     ////////////////////////////////////////////////// */
 
 /* //// Universal Browser Reset ////////////////////// */
+
 * {                                                     
     vertical-align: baseline;
     font-weight: inherit;
@@ -17,7 +18,7 @@
     padding: 0;
     margin: 0;
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow-wrap: break-word;
 }
 
 h1 {
@@ -77,10 +78,6 @@ h2 {
     background-color: dodgerblue;
 }
 
-.bg_grey {
-    background-color: rgb(42, 42, 42);
-}
-
 .ft_dodger {
     color: dodgerblue;
 }
@@ -130,6 +127,21 @@ body {
     font-weight: bold;
     border-color: yellow;
     background: none;
+    box-shadow: 5px 5px 4px black;
+}
+
+.btn:hover, .btn:active {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;;
+}
+
+.btn:active {
+    transform: translateY(3px);
+    box-shadow: 2px 1px 1px black;
 }
 
 .login {
