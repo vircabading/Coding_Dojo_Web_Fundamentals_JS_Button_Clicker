@@ -21,6 +21,7 @@
 <!--//// BODY ////////////////////////////////////////-->
 <body>
     <div class="main_container wdt_90 flex_down">
+        <!--//// NAV BAR /////////////////////////////-->
         <div class="nav flex_right align_center\ margin_10 bg_dodger">  <!-- Nav Bar -->
             <div class="logo">                                          <!-- Logo -->
                 Dojonary
@@ -32,7 +33,11 @@
                 <button class="btn login">Log In</button>
             </div>
         </div>
+
+        <!--//// MAIN CONTENT AREA ///////////////////-->
         <div class="main_content flex_right pad_10 margin_10">          <!-- Main Content Area -->
+
+            <!--//// LEFT COLUMN of main area ////////-->
             <div class="left_column flex_3 flex_down">                  <!-- Left Column -->
                 <div class="card flex_right pad_10">                    <!-- Definition Card -->
                     <div class="flex_down flex_1 align_center">         <!-- Card Left Column -->
@@ -89,7 +94,7 @@
                         <span class="margin_10">
                             Plural: lorems
                         </span>
-                        <button class="likes btn margin_10">
+                        <button class="likes btn margin_10" onclick="add_likes(this)">
                             8 likes
                         </button>
                     </div>
@@ -113,7 +118,7 @@
                         <span class="margin_10">
                             Plural: lorems
                         </span>
-                        <button class="likes btn margin_10">
+                        <button class="likes btn margin_10" onclick="add_likes(this)">
                             8 likes
                         </button>
                     </div>
@@ -126,7 +131,9 @@
                     </div>
                 </div>
             </div>
-            <div>                                                       <!-- Right Column -->
+
+            <!--//// RIGHT COLUMN of main area ///////-->   
+            <div class="flex_1">                                        <!-- Right Column -->
                 <div class="add_define_column card flex_down flex_1 align_center">    
                     <h2 class="margin_10 pad_10">
                         Dojonary<br>is defined<br>by YOU
