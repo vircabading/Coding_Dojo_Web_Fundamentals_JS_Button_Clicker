@@ -15,3 +15,15 @@ function add_likes(element) {                               // Function adds 1 t
     element.innerText = temp_num + " likes";                // update the number of likes
     alert("Ninja was liked");                               // give out alert text box saying ninja was liked
 }
+
+function remove(element) {                                  // Function the removes the element from the screen
+    element.remove();
+}
+
+function log_in_or_log_out(element) {                       // Function the alternates between the button
+    if (element.innerText == "Log In") {                    //     saying "Log In" or "Log Out"
+        element.innerText = "Log Out";
+    } else {
+        element.innerText = "Log In";
+    }
+}
