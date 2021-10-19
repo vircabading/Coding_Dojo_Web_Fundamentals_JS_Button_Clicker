@@ -1,8 +1,7 @@
 /*  //////////////////////////////////////////////////
     Subj:       Coding Dojo > Web Fundamentals > CSS
-    Project:    CSS Library
-    By:         Virgilio D. Cabading Jr.
-    Created:    October 14, 2021 Last modified: October 19, 2021
+                CSS Library
+    By:         Virgilio D. Cabading Jr.  Created: October 14, 2021 Last modified: October 19, 2021
     ////////////////////////////////////////////////// */
 
 /* //// Universal Browser Reset ////////////////////// */
@@ -43,15 +42,36 @@
     box-shadow: 2px 1px 1px black;
 }
 
+/*  //// NAV BAR ///////////////////////////////////////////////////// */
+
+.nav {                                      /* Navigation bar */
+    background: rgb(2,0,36);                      
+    background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(71,154,170,1) 34%, rgba(9,9,121,1) 93%);
+    border-radius: 10px;
+    display: flex;                          /* Nav Bar is a container */
+    align-items: center;
+}
+
 /*  //// Flex Box ////////////////////////////////////////////////// */
 
-.main_container {
-<<<<<<< HEAD
+body {
     display: flex;
     width: 100%;
-=======
->>>>>>> 4c013b8ef7b82517fbacb1961d5982da1ff1efae
     margin: 0 auto;
+}
+
+.main_container {
+    width: 90%;
+}
+
+.card {
+    border-style: solid;
+    border-width: 2px;
+    border-color: dodgerblue;
+}
+
+.header {
+    background-color: dodgerblue;
 }
 
 /*      ---- Flex Direction ---------------------------------------- */
@@ -112,14 +132,6 @@
 
 /*  //// WIDTH ///////////////////////////////////////////////////// */
 
-<<<<<<< HEAD
-.nav {                                      /* Navigation bar */
-    /* background: rgb(2,0,36);                      
-    background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(71,154,170,1) 34%, rgba(9,9,121,1) 93%); */ 
-    border-radius: 10px;
-    display: flex;                          /* Nav Bar is a container */
-    align-items: center;
-=======
 .wdt_100 {
     width: 100%;
 }
@@ -130,11 +142,14 @@
 
 .wdt_70 {
     width: 70%;
+}
 
+.wdt_50 {
+    width: 50%  ;
+}
 
 .wdt_30 {
     width: 30%;
->>>>>>> 4c013b8ef7b82517fbacb1961d5982da1ff1efae
 }
 
 /*  //// Generic formating /////////////////////////////////////// */
@@ -151,7 +166,6 @@ h3 {
     font-size: 1.2rem;
 }
 
-<<<<<<< HEAD
 .bg_blue_steel {
     background: rgb(2,2,5);
     background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
@@ -159,8 +173,6 @@ h3 {
 
 /* //// PADDING AND MARGINS ////////////////////////////////////// */
 
-=======
->>>>>>> 4c013b8ef7b82517fbacb1961d5982da1ff1efae
 .pad_10 {
     padding: 10;
 }
@@ -170,8 +182,13 @@ h3 {
 }
 
 /*  //// BORDER ////////////////////////////////////////////////// */
+
 .bd_solid {
     border-style: solid;
     border-width: 2px;
+    border-radius: 10px;
+}
+
+.db_rounded {
     border-radius: 10px;
 }
