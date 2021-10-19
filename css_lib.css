@@ -2,7 +2,7 @@
     Subj:       Coding Dojo > Web Fundamentals > CSS
     Project:    CSS Library
     By:         Virgilio D. Cabading Jr.
-    Created:    October 14, 2021
+    Created:    October 14, 2021 Last modified: October 19, 2021
     ////////////////////////////////////////////////// */
 
 /* //// Universal Browser Reset ////////////////////// */
@@ -33,8 +33,6 @@
 .btn:hover, .btn:active {
     border-style: solid;
     border-width: 3px;
-    border-color: white;
-    color: white;
     font-weight: bold;
     cursor: pointer;;
 }
@@ -48,13 +46,12 @@
 
 /* Fixed width container class that will "auto-center" itself */
 .main_container {
-    width: 1200px;
+    display: flex;
+    width: 100%;
     margin: 0 auto;
 }
 
-.container {
-    display: flex;
-}
+/*      ---- Flex Direction ---------------------------------------- */
 
 .flex_right {
     display: flex;
@@ -66,6 +63,8 @@
     flex-direction: column;
 }
 
+/*      ---- Alignment ---------------------------------------------- */
+
 .align_center {
     align-items: center;
 }
@@ -73,6 +72,8 @@
 .align_up {
     align-items: flex-start;
 }
+
+/*      ---- Justification ------------------------------------------ */
 
 .justify_left {
     justify-content:flex-start;
@@ -109,28 +110,25 @@
 /*  //// Nav Bar /////////////////////////////////////////////////// */
 
 .nav {                                      /* Navigation bar */
-    background: rgb(2,0,36);              /* Gradient Color Background */              
-    background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(71,154,170,1) 34%, rgba(9,9,121,1) 93%);
-    border-color: dodgerblue;             /* Nav border info */
-    border-width: 2px;
+    /* background: rgb(2,0,36);                      
+    background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(71,154,170,1) 34%, rgba(9,9,121,1) 93%); */ 
     border-radius: 10px;
-    display: flex;                          /* Nav Bar is a container with two children seperated from one another */
-    justify-content: space-between;
+    display: flex;                          /* Nav Bar is a container */
     align-items: center;
 }
 
 /*  //// Generic formating /////////////////////////////////////// */
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .bg_blue_steel {
@@ -138,28 +136,7 @@ h3 {
     background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
 }
 
-.bg_dodger {
-    background-color: dodgerblue;
-}
-
-.ft_white {
-    color: white;
-}
-
-.ft_dodger {
-    color: dodgerblue;
-}
-
-.bd_dodger {
-    border-color: dodgerblue;
-}
-
-.bd_navy {
-    border-style: solid;
-    border-color: navy;
-    border-width: 2px;
-    border-radius: 10px;
-}
+/* //// PADDING AND MARGINS ////////////////////////////////////// */
 
 .pad_10 {
     padding: 10;
@@ -169,6 +146,7 @@ h3 {
     margin: 10;
 }
 
+/*  //// BORDER ////////////////////////////////////////////////// */
 .bd_solid {
     border-style: solid;
     border-width: 2px;
