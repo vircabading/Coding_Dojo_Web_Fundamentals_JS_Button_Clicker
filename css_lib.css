@@ -17,6 +17,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 
@@ -44,10 +45,12 @@
 
 /*  //// Flex Box ////////////////////////////////////////////////// */
 
-/* Fixed width container class that will "auto-center" itself */
 .main_container {
+<<<<<<< HEAD
     display: flex;
     width: 100%;
+=======
+>>>>>>> 4c013b8ef7b82517fbacb1961d5982da1ff1efae
     margin: 0 auto;
 }
 
@@ -93,28 +96,45 @@
 
 /*  //// Columns ///////////////////////////////////////////////// */
 
-.col, .col-2, .col-3 {
+.col, .col_2, .col_3 {
     flex: 1;
     margin: 0px 10px;
     padding: 10px;
 }
 
-.col-2 {
+.col_2 {
     flex: 2;
 }
 
-.col-3 {
+.col_3 {
     flex: 3;
 }
 
-/*  //// Nav Bar /////////////////////////////////////////////////// */
+/*  //// WIDTH ///////////////////////////////////////////////////// */
 
+<<<<<<< HEAD
 .nav {                                      /* Navigation bar */
     /* background: rgb(2,0,36);                      
     background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(71,154,170,1) 34%, rgba(9,9,121,1) 93%); */ 
     border-radius: 10px;
     display: flex;                          /* Nav Bar is a container */
     align-items: center;
+=======
+.wdt_100 {
+    width: 100%;
+}
+
+.wdt_90 {
+    width: 90%;
+}
+
+.wdt_70 {
+    width: 70%;
+
+
+.wdt_30 {
+    width: 30%;
+>>>>>>> 4c013b8ef7b82517fbacb1961d5982da1ff1efae
 }
 
 /*  //// Generic formating /////////////////////////////////////// */
@@ -131,6 +151,7 @@ h3 {
     font-size: 1.2rem;
 }
 
+<<<<<<< HEAD
 .bg_blue_steel {
     background: rgb(2,2,5);
     background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
@@ -138,6 +159,8 @@ h3 {
 
 /* //// PADDING AND MARGINS ////////////////////////////////////// */
 
+=======
+>>>>>>> 4c013b8ef7b82517fbacb1961d5982da1ff1efae
 .pad_10 {
     padding: 10;
 }

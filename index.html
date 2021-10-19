@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--//////////////////////////////////////////////////
-    Subj:
-    
-    By:
-    Created:
+    Subj:       Coding Dojo > Web Fundamentals > Javascript
+                Button Clicker
+    By:         Virgilio D. Cabading Jr.
+    Created:    October 16, 2021
     //////////////////////////////////////////////////-->
 <html lang="en">
 
@@ -12,15 +12,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_lib.css">              <!-- Link to CSS Library-->
     <link rel="stylesheet" href="style.css">                <!-- Link to CSS Stylesheet-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Dojonary</title>
 </head>
 
 <!--//// BODY ////////////////////////////////////////-->
 <body>
-    <script src="script.js">                                // Link to javascript
+    <div class="main_container wdt_90 flex_down">
+        <!--//// NAV BAR /////////////////////////////-->
+        <div class="nav flex_right align_center\ margin_10 bg_dodger">  <!-- Nav Bar -->
+            <div class="logo">                                          <!-- Logo -->
+                Dojonary
+            </div>
+            <div class="pad_10 margin_10">                              <!-- Search Bar -->
+                <input type="text" placeholder="Search                          ">
+            </div>
+            <div class="pad_10 margin_10">                              <!-- Log in Buton -->
+                <button class="btn login" onclick="log_in_or_log_out(this)">Log In</button>
+            </div>
+        </div>
+
+        <!--//// MAIN CONTENT AREA ///////////////////-->
+        <div class="main_content flex_right pad_10 margin_10">          <!-- Main Content Area -->
+
+            <!--//// LEFT COLUMN of main area ////////-->
+            <div class="left_column flex_3 flex_down">                  <!-- Left Column -->
+                <div class="card flex_right pad_10">                    <!-- Definition Card -->
+                    <div class="flex_down flex_1 align_center">         <!-- Card Left Column -->
+                        <h1 class="margin_10 ft_dodger">
+                            ninja
+                        </h1>
+                        <h2 class="margin_10 ita">
+                            noun
+                        </h2>
+                        <span class="margin_10">
+                            Plural: Ninjas
+                        </span>
+                        <button class="likes btn margin_10" onclick="add_likes(this)">
+                            13 likes
+                        </button>
+                    </div>
+                    <div class="flex_right justify_center flex_2 align_center"> <!-- Card Right Column -->
+                        <h2 class="margin_10">
+                            A practitioner skilled in the <a href="">Japanese</a> art of <a href="">ninjutsu</a>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="card flex_right pad_10">                    <!-- Definition Card -->
+                    <div class="flex_down flex_1 align_center">         <!-- Card Left Column -->
+                        <h1 class="margin_10 ft_dodger">
+                            ninja
+                        </h1>
+                        <h2 class="margin_10 ita">
+                            noun
+                        </h2>
+                        <span class="margin_10">
+                            Plural: Ninjas
+                        </span>
+                        <button class="likes btn margin_10" onclick="add_likes(this)">
+                            1337 likes
+                        </button>
+                    </div>
+                    <div class="flex_right justify_center flex_2 align_center"> <!-- Card Right Column -->
+                        <h2 class="margin_10">
+                            A <a href="">programmer</a> who breaks down problems with <a href="">zen</a>-like focus
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="card flex_right pad_10">                    <!-- Definition Card -->
+                    <div class="flex_down flex_1 align_center">         <!-- Card Left Column -->
+                        <h1 class="margin_10 ft_dodger">
+                            lorem
+                        </h1>
+                        <h2 class="margin_10 ita">
+                            noun
+                        </h2>
+                        <span class="margin_10">
+                            Plural: lorems
+                        </span>
+                        <button class="likes btn margin_10" onclick="add_likes(this)">
+                            8 likes
+                        </button>
+                    </div>
+                    <div class="flex_right justify_center flex_2 align_center"> <!-- Card Right Column -->
+                        <h2 class="margin_10">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, esse. 
+                            Doloribus blanditiis repellat nihil vero fuga. Doloribus, deleniti. 
+                            Corporis ullam ipsam optio quisquam veniam distinctio minima inventore perspiciatis saepe quibusdam?
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="card flex_right pad_10">                    <!-- Definition Card -->
+                    <div class="flex_down flex_1 align_center">         <!-- Card Left Column -->
+                        <h1 class="margin_10 ft_dodger">
+                            lorem
+                        </h1>
+                        <h2 class="margin_10 ita">
+                            noun
+                        </h2>
+                        <span class="margin_10">
+                            Plural: lorems
+                        </span>
+                        <button class="likes btn margin_10" onclick="add_likes(this)">
+                            8 likes
+                        </button>
+                    </div>
+                    <div class="flex_right justify_center flex_2 align_center"> <!-- Card Right Column -->
+                        <h2 class="margin_10">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, esse. 
+                            Doloribus blanditiis repellat nihil vero fuga. Doloribus, deleniti. 
+                            Corporis ullam ipsam optio quisquam veniam distinctio minima inventore perspiciatis saepe quibusdam?
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--//// RIGHT COLUMN of main area ///////-->   
+            <div class="flex_1">                                        <!-- Right Column -->
+                <div class="add_define_column card flex_down flex_1 align_center">    
+                    <h2 class="margin_10 pad_10">
+                        Dojonary<br>is defined<br>by YOU
+                     </h2>
+                    <button class="add btn margin_10" onclick="remove(this)">                  <!-- Add Definition Button -->
+                        Add Definition
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">                                             // Link to javascript
     </script>
 </body>
 </html>
