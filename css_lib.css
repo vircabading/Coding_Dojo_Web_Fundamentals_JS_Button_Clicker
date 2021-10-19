@@ -76,6 +76,10 @@ body {
 
 /*      ---- Flex Direction ---------------------------------------- */
 
+.container {
+    display: flex;
+}
+
 .flex_right {
     display: flex;
     flex-direction: row;
